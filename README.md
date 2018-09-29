@@ -32,7 +32,7 @@ The institutional and funding logos can be changed in a straightforward manner w
 
 Code snippets can be easily inserted with the `\<snippet\>` tag. This tag is then converted to proper html at runtime by the javascript in `LJP.js`.
 
-### Two columns slide
+### Two columns slides
 
 The `\<left\>` and `\<right\>` tags are also interpreted at runtime to create left and right columns.
 
