@@ -1,0 +1,525 @@
+<!doctype html>
+
+<!-- TO DO -------------------------------
+
+Expliquer le chalkboard, avec les raccourcis clavier
+Tips for exporting images from Matlab
+
+-------------------------------------- -->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>LJP</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/LJP.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <script src='plugin/snap.svg-min.js'></script>
+    <script src='Media/Animated/test_svg.js'></script>
+
+  </head>
+  <body>
+    <div class="reveal">
+
+      <!-- Top and bottom bars, fixed headers for h1 elements -->
+      <div id='top_bar'></div>
+      <div id='bottom_bar'></div>
+      <div id='fixed_header'></div>
+
+      <!--
+------------------------------------------------------------
+YOU CAN MODIFY THIS FILE FROM HERE
+--------------------------------------------------------- -->            
+
+      <logo class='institution' src='Media/Images/Logos/SU_Sciences.png'></logo>
+      <logo class='institution' src='Media/Images/Logos/LJP.png'></logo>
+      <logo class='institution' src='Media/Images/Logos/CNRS.png'></logo>
+
+      <logo class='funding' src='Media/Images/Logos/ANR.png'></logo>
+      <logo class='funding' src='Media/Images/Logos/ERC.png'></logo>
+      <logo class='funding' src='Media/Images/Logos/DIM.png'></logo>
+      <logo class='funding' src='Media/Images/Logos/HFSP.png'></logo>
+
+      <div class="slides">
+
+        <section data-state="FirstSlide">
+
+          <h2>Reveal.js LJP template</h2>
+          <h3>The most complete guide</h3>
+
+          <div class='authors'>
+            <p>First author</p>
+            <p>Second author</p>
+            <p>Third author</p>
+            <p>Fourth author</p>
+          </div>
+
+        </section>
+
+        <section>
+          <section>
+            <h1>Principle</h1>
+
+            <p>Slides are designed with text!</p>
+            <p>This whole presentation has been created just by typing html in a text editor</p>
+            <br>
+
+            <snippet class='html'>
+              <section>
+                <h1>Principle</h1>
+                <p>Slides are designed with text!</p>
+                <p>This whole presentation has been created just by typing html in a text editor</p>
+              </section>
+            </snippet>
+
+          </section>
+
+          <section>
+
+            <h1>How does it work?</h1>
+
+            <p>Reveal.js is a web-based framework from presentations</p>
+
+            <br>
+
+            <p>Watch the <a href="https://revealjs.com/#/" target="_blank">demo</a> for an introduction</p>
+
+            <p>See the <a href='https://github.com/hakimel/reveal.js/' target="_blank">project's page</a> for the details</p>
+
+          </section>
+
+          <section>
+
+            <h1>Which text editor?</h1>
+
+            <p>Any text editor will do the job</p>
+            <br>
+            <p>But <a href='http://brackets.io/' target='_blank'>Brackets</a> is a good companion editor</p>
+            <p>It has a live preview feature to view modifications instantaneously</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+
+            <h1>The interface is highly controllable</h1>
+
+            <h4>Try the key bindings!</h4>
+            <p>Full screen: <i>F</i> / <i>ESC</i></p>
+            <p>Slide navigation: <i>Arrows</i></p>
+            <p>Speaker's view: <i>S</i></p>
+            <p>Slide overview: <i>ESC</i></p>        
+            <p>Zoom: <i>Alt + Click</i> or <i>Ctrl + Click</i></p>
+
+          </section>
+
+          <section>
+
+            <h1>The template is highly customisable</h1>
+
+            <ul>
+              <li><p>Change content and structure</p></li>
+              <li><p>Include your own logos</p></li>
+              <li><p>Develop your own features</p></li>
+            </ul>
+          </section>
+
+          <section>
+
+            <h1>Export to pdf</h1>
+
+            <p>You can export to pdf by adding <tt>?print-pdf</tt> to the presentation's URL</p>
+            <snippet class='escape'>
+              path/to/my/pres/index.html?print-pdf
+              path/to/my/pres/index.html?print-pdf&amp;showNotes=true
+            </snippet>
+
+            <br>
+
+            <p>Or simply <a href='?print-pdf'>click here</a></p>
+
+            <br>
+
+            <p>Caveat: only works with Chrome</p>
+
+          </section>
+
+        </section>
+
+        <section  data-background-image="Media/Images/Backgrounds/bkg2.jpg">
+
+          <h2 class='contoured'>Lots of media are supported</h2>
+
+        </section>
+
+        <section>
+          <section>
+            <h1>Images and figures</h1>
+
+            <left>
+              <img src='Media/Images/Jean_Perrin_1927.jpg'>
+            </left>
+            <right>
+              <img src='Media/Images/Jean_Perrin_trajs.png'>
+            </right>
+
+          </section>
+          <section>
+            <h1>Images and figures</h1>
+
+            <snippet class='html'>
+              <img src='Media/Images/Jean_Perrin_1927.jpg'>
+            </snippet>
+
+            <br>
+            <ul>
+              <p>Supported formats: svg, png, jpg, gif, tiff, bmp ...</p>
+              <p>Transparency supported</p>
+            </ul>
+          </section>
+
+        </section>
+
+        <section >
+
+          <section>
+            <h1>Audio files</h1>
+
+            <audio controls>
+              <source src="Media/Audio/vibraphone.mp3" type="audio/mpeg">
+            </audio> 
+
+            <br>
+            <br>
+
+            <snippet class='html'>
+              <audio controls>
+                <source src="Media/Audio/vibraphone.mp3" type="audio/mpeg">
+              </audio>
+            </snippet>
+
+            <br>
+            <ul>
+              <p>Supported formats: mp3, ogg, wav</p>
+            </ul>
+          </section>
+
+        </section> 
+
+        <section data-video=false>
+          <section>
+            <h1>Movies</h1>
+
+            <video controls autoplay src='Media/Movies/Sample_earth.mp4' width='90%'></video>
+
+          </section>
+          <section data-video=false>
+            <h1>Movies</h1>
+
+            <snippet class="html">
+              <video controls autoplay src='Media/Movies/Sample_earth.mp4'></video>
+            </snippet>
+
+            <br>
+            <ul>
+              <p><a href='https://www.w3schools.com/html/html5_video.asp' target='_blank'>Supported formats</a> include mp4, ogg, WebM</p>
+            </ul>
+          </section>
+
+        </section> 
+<!--
+        <section>
+
+          <h1>3D rendering (three.js)</h1>
+
+          <div id='container3D'></div>
+
+        </section>
+-->        
+        <section>
+          <section data-video='stream'>
+
+            <h1>Stream your local camera</h1>
+
+          </section>
+
+          <section data-video='false'>
+
+            <h1>Stream your local camera</h1>
+
+            <snippet class='html'>
+              <section data-video="stream">
+                <h1>Stream your local camera</h1>
+              </section>
+            </snippet>
+
+            <br>
+            <ul>
+              <p>If you have multiple video inputs (front ant rear camera) you can click on the video to cycle trough</p>
+            </ul>
+          </section>
+
+        </section>   
+
+        <section>
+
+          <h1>Animated SVG (with Snap.svg)</h1>
+
+          <left>
+            <svg id="test_svg"></svg>
+          </left>
+
+          <right>
+            <br>
+            <h3>Instructions</h3>
+            <ol>
+              <li><p>Double-click the square</p></li>
+              <li><p>Drag to scale</p></li>
+            </ol>
+          </right>
+
+        </section>
+
+        <section >
+
+          <section>
+
+            <h1>Websites (iframes)</h1>
+
+            <snippet class='html'>
+              <section data-background-iframe="http://www.labos.upmc.fr/ljp/"></section>
+            </snippet>
+
+            <br>
+            <p>Check below for a demo (internet connection required)</p>
+
+          </section>
+
+          <section data-background-iframe="http://www.labos.upmc.fr/ljp/">
+          </section>
+
+        </section> 
+
+
+        <section  data-background-image="Media/Images/Backgrounds/bkg1.jpg">
+
+          <h2 class='contoured'>Specific syntax</h2>
+
+        </section>
+
+        <section>
+
+          <h1>One column</h1>
+
+          <img src='Media/Images/Jean_Perrin_1927.jpg' width='350px'>
+
+          <br>
+
+          <ul>
+            <li><p>The default structure</p></li>
+            <li><p>Elements are centered</p></li>
+          </ul>
+
+
+        </section>
+
+        <section>
+
+          <h1>Two columns</h1>
+
+          <left>
+
+            Code
+            <snippet class='html'>
+              <left>
+                <p>This is not right</p>
+              </left>
+            </snippet>
+
+            <img src='Media/Images/Jean_Perrin_1927.jpg' width='50%'>
+
+          </left>
+
+          Code
+          <right>
+
+            <snippet class='html'>
+              <right>
+                <p>This is right</p>
+              </right>
+            </snippet>
+
+            <img src='Media/Images/Jean_Perrin_1927.jpg' width='50%'>
+          </right>
+
+          <div style='float:left; width: 100%; text-align: center; margin-top:20px;'>
+            <p>Double happiness!</p>
+          </div>
+
+        </section>
+
+        <section>
+
+          <h1>Highlighted block</h1>
+
+          <snippet class='html'>
+            <blockquote>This is highlighted!</blockquote>
+          </snippet>
+
+          <br>
+          <br>
+          <blockquote>This is highlighted!</blockquote>
+
+        </section>
+
+        <section>
+
+          <h1>Equations</h1>
+
+          <p>Inline equations $y = \alpha x \pm \beta$</p>
+
+          <snippet class='html'>
+            <p>Inline equations $y = \alpha x \pm \beta$</p>
+          </snippet>
+
+          <br>
+
+          <p>Page-wide equations:</p>
+
+          $$\left[ x_{1,2} = \frac{- b \pm \sqrt{\Delta}}{2a} \right]$$
+
+          <snippet class='html'>
+            <p>Page-wide equations:</p>
+            $$\left[ x_{1,2} = \frac{- b \pm \sqrt{\Delta}}{2a} \right]$$
+          </snippet>
+
+        </section>
+
+        <section>
+
+          <h1>Citations</h1>
+
+          <!-- Citations on the slide -->
+          <cite>Perrin J., <i>J. Best Science</i> <b>18</b> pp.100-178 (1928)</cite>
+          <cite>Dumb & Dumber, <i>J. Fake Results</i> <b>18</b> pp.100-178 (2018)</cite>
+          <cite>Nonymous A. <i>et al.</i>, <i>J. Avg. Biol.</i> <b>18</b> 67 (2013)</cite>
+          <cite>J.H. bien s. tt. rap., <i>J. Pet. Ann.</i> <b>18</b> pp.100-178 (2001)</cite>
+
+          <!-- The following citations will not appear on the slide, but will appear in the bibliography -->
+          <cite>Perrin J., <i>J. Best Science</i> <b>18</b> pp.100-178 (1928)</cite>
+          <cite>Dumb & Dumber, <i>J. Fake Results</i> <b>18</b> pp.100-178 (2018)</cite>
+          <cite>Nonymous A. <i>et al.</i>, <i>J. Avg. Biol.</i> <b>18</b> 67 (2013)</cite>
+          <cite>J.H. bien s. tt. rap., <i>J. Pet. Ann.</i> <b>18</b> pp.100-178 (2001)</cite>
+          <cite>Perrin J., <i>J. Best Science</i> <b>18</b> pp.100-178 (1928)</cite>
+          <cite>Dumb & Dumber, <i>J. Fake Results</i> <b>18</b> pp.100-178 (2018)</cite>
+          <cite>Nonymous A. <i>et al.</i>, <i>J. Avg. Biol.</i> <b>18</b> 67 (2013)</cite>
+          <cite>J.H. bien s. tt. rap., <i>J. Pet. Ann.</i> <b>18</b> pp.100-178 (2001)</cite>
+
+          <p>Citations can be defined anywhere in the section</p>
+
+          <snippet class='html'>
+            <cite>Perrin J., <i>J. Best Science</i> <b>18</b> pp.100-178 (1928)</cite>
+            <cite>Dumb & Dumber, <i>J. Fake Results</i> <b>18</b> pp.100-178 (2018)</cite>
+            <cite>Nonymous A. <i>et al.</i>, <i>J. Avg. Biol.</i> <b>18</b> 67 (2013)</cite>
+            <cite>J.H. bien s. tt. rap., <i>J. Pet. Ann.</i> <b>18</b> pp.100-178 (2001)</cite>
+          </snippet>
+
+          <br>
+          <p>They appear automatically at the bottom of the slide</p>
+          <p>Maximum 4 citations per slide</p>
+
+        </section>
+
+        <section>
+
+          <section>
+
+            <h1>Bibliography</h1>
+
+            <p>Citations from all slides can be easily compiled in a bibliography (generally in extra slides at the end)</p>
+
+            <br>
+
+            <p>Simply create a section with the following <tt>data-state</tt>:</p>
+
+            <snippet class='html'>
+              <section data-state='bibliography'></section>
+            </snippet>
+
+            <p>See below for an exemple</p>
+
+          </section>
+
+          <section data-state='bibliography'></section>
+
+        </section>
+
+        <section>
+          <section data-state="LastSlide">
+
+            <h2>Acknowledgements</h2>
+
+            <ul>
+              <li><p>My awesome students</p></li>
+              <li><p>My wonderful advisor</p></li>
+              <li><p>My dear colleagues</p></li>
+              <li><p>My numerous collaborators</p></li>
+            </ul>
+
+          </section>
+
+          <section data-state="LastSlide">
+
+            <h2>Job opportunities</h2>
+
+            <ul>
+              <br>
+              <p>We recruit motivated Ph.D. students</p>
+              <p>We search for smart post-docs</p>
+              <br>
+              <p>Contact: <a href='#'>nom.prenom@upmc.fr</a></p>
+            </ul>
+
+          </section>
+
+        </section>
+      </div>
+    </div>
+
+    <!--
+------------------------------------------------------------
+DO NOT MODIFY BEYOND THIS POINT
+--------------------------------------------------------- --> 
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+      <!--
+    <script src="plugin/three.js/build/three.js"></script>
+    <script src="plugin/three.js/examples/js/WebGL.js"></script>
+    <script src="plugin/three.js/examples/js/libs/stats.min.js"></script>
+    <script src="plugin/three.js/examples/js/controls/OrbitControls.js"></script>
+    <script src="plugin/three.js/examples/js/loaders/DRACOLoader.js"></script>
+    <script src="plugin/three.js/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="Media/3D/LittleTokyo/LittleTokyo.js"></script>
+    -->
+    <script src="js/LJP.js"></script>
+  </body>
+</html>
