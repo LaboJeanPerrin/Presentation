@@ -17,6 +17,7 @@ This template has several plugins already activated:
 - **Equations** with [Katex](https://github.com/Khan/KaTeX). Embed your LaTeX-syntaxed equations in `$...$` for inline equations and in `$$...$$` for page-wide equations.
 - **Local camera stream** with [reveal-embed-video](https://github.com/ThomasWeinert/reveal-embed-video)
 - **Animated svg** with [Snap.svg](http://snapsvg.io/).
+- **Live annotation** with [the chalkboard plugin](https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard)
 
 Audio, video and iframes are natively supported by your browser (html5).
 
