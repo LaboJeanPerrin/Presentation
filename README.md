@@ -22,10 +22,31 @@ Audio, video and iframes are natively supported by your browser (html5).
 
 ## Specific features
 
+This template has several specific features, listed below.
+
 ### Manage logos 
+
+The institutional and funding logos can be changed in a straightforward manner with the `\<logo\>` tags defined in the `index.html` file. These tags are then converted to proper html at runtime by the javascript in `LJP.js`.
+
+### Code \<snippet\>
+
+Code snippets can be easily inserted with the `\<snippet\>` tag. This tag is then converted to proper html at runtime by the javascript in `LJP.js`.
+
+### Two columns slide
+
+The `\<left\>` and `\<right\>` tags are also interpreted at runtime to create left and right columns.
 
 ### Citations and bibliography
 
+The `\<cite\>` tag allows to insert a citation in a slide. The bibliographic reference appears at the bottom of the page, with a maximum of 4 citations per slide (other citations are not displayed).
+
+Then, a bibliography can be automatically generated in a specific slide by creating an empty bibliography section:
+
+```
+<section data-state='bibliography'></section>
+```
+
+A series of slides containing packets of 10 bibliographic references are then created at runtime. All references appear in the same order as in the `index.html` file.
 
 ## Misc notes
 
@@ -36,3 +57,4 @@ Audio, video and iframes are natively supported by your browser (html5).
 <logo class='institution' src='Media/Images/Logos/LJP.png'></logo>
 <logo class='institution' src='Media/Images/Logos/CNRS.png'></logo>
 ```
+)
