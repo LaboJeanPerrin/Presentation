@@ -2,6 +2,8 @@
 
 This repository is a template for scientific presentations based on [Reveal.js](https://revealjs.com/#/).
 
+See the [demo here](https://labojeanperrin.github.io/Presentation/).
+
 ## General Usage
 
 Clone or download the repository on your local machine and modify `index.html` according to your needs. Please read the [Reveal.js presentation page](https://github.com/hakimel/reveal.js/) for information on basic editing.
