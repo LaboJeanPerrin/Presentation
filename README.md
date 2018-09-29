@@ -57,4 +57,3 @@ A series of slides containing packets of 10 bibliographic references are then cr
 <logo class='institution' src='Media/Images/Logos/LJP.png'></logo>
 <logo class='institution' src='Media/Images/Logos/CNRS.png'></logo>
 ```
-)
